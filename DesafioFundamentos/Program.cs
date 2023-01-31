@@ -5,8 +5,8 @@ Console.OutputEncoding = System.Text.Encoding.UTF8;
 
 decimal precoInicial = 0;
 decimal precoPorHora = 0;
-
-Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
+Console.Clear();
+Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n\n" +
                   "Digite o preço inicial:");
 precoInicial = Convert.ToDecimal(Console.ReadLine());
 
@@ -28,6 +28,9 @@ while (exibirMenu)
     Console.WriteLine("2 - Remover veículo");
     Console.WriteLine("3 - Listar veículos");
     Console.WriteLine("4 - Encerrar");
+    Console.WriteLine("");
+    Console.WriteLine($"Preço inicial...: {precoInicial}");
+    Console.WriteLine($"Preço por hora..: {precoPorHora}");
 
     switch (Console.ReadLine())
     {
